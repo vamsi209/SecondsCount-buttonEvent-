@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="button.js"></script>
+ <meta charset="utf-8">
+ <title>Counting the number of milliseconds</title>
+ </head>
+ <body>
+<center>
+	<h1>Count the number of milliseconds between the two click events on buttons </h1>
+	<h2>Click on the Below buttons</h2>
+   
+	<button onclick='startButton()'>Start</button>	<br><br>
+	<button onclick='stopButton()'>Stop</button>	<br>
+
+<hr>
+
+<p>Displaying the keyboard key which was pressed in a textbox. </p>
+
+<input type="text" size="40" onkeypress="myFunction(event)">
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction(event) {
+    var x = event.which || event.keyCode;
+    document.getElementById("demo").innerHTML = "The Unicode value is: " + x;
+}
+</script>
+</center>
+
+</body>
+</html>
